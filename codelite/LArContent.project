@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="LArContent" InternalType="" Version="10.0.0">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00010001N0005Debug000000000000]]>
+    </Plugin>
+  </Plugins>
+  <Description/>
+  <Dependencies/>
+  <VirtualDirectory Name="include">
+    <VirtualDirectory Name="LArCheating">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingClusterCharacterisationAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingClusterCreationAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingCosmicRayIdentificationAlg.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingCosmicRayShowerMatchingAlg.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingEventSlicingTool.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingNeutrinoCreationAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingNeutrinoDaughterVerticesAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingPfoCreationAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingVertexCreationAlgorithm.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArCustomParticles">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCustomParticles/CustomParticleCreationAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCustomParticles/ShowerParticleBuildingAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCustomParticles/TrackParticleBuildingAlgorithm.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArHelpers">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArClusterHelper.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArGeometryHelper.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArMCParticleHelper.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArMonitoringHelper.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArPfoHelper.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArPointingClusterHelper.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArVertexHelper.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArSvmHelper.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArPcaHelper.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArStitchingHelper.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArMonitoring">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArMonitoring/EventDisplayAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArMonitoring/EventValidationAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArMonitoring/ParticleAnalysisAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArMonitoring/ParticleMonitoringAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArMonitoring/VisualMonitoringAlgorithm.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArObjects">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArMCParticle.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArOverlapTensor.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArPointingCluster.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArShowerOverlapResult.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArShowerPfo.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArThreeDSlidingFitResult.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArTrackOverlapResult.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArTrackPfo.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArTwoDSlidingFitObjects.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArTwoDSlidingFitResult.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArTwoDSlidingShowerFitResult.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArXOverlap.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArSupportVectorMachine.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArPersistency">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArPersistency/EventReadingAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArPersistency/EventWritingAlgorithm.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArPlugins">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArPlugins/LArParticleIdPlugins.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArPlugins/LArPseudoLayerPlugin.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArPlugins/LArRotationalTransformationPlugin.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArPlugins/LArTransformationPlugin.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArStitching">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArStitching/MultiPandoraApi.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArStitching/MultiPandoraApiImpl.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArStitching/StitchingAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArStitching/StitchingObjectCreationTool.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArStitching/StitchingPfoMergingTool.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArThreeDReco">
+      <VirtualDirectory Name="LArCosmicRay">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayBaseMatchingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayIdentificationAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayShowerMatchingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayTrackMatchingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayTrackRecoveryAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayVertexBuildingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArCosmicRay/DeltaRayIdentificationAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArCosmicRay/DeltaRayMatchingAlgorithm.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArEventBuilding">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArEventBuilding/BranchAssociatedPfosTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArEventBuilding/EndAssociatedPfosTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArEventBuilding/EventSlicingTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArEventBuilding/NeutrinoCreationAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArEventBuilding/NeutrinoDaughterVerticesAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArEventBuilding/NeutrinoHierarchyAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArEventBuilding/NeutrinoPropertiesAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArEventBuilding/VertexAssociatedPfosTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArEventBuilding/CheatingAssociatedPfosTool.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArHitCreation">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/ClearLongitudinalTrackHitsTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/ClearTransverseTrackHitsTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/DeltaRayShowerHitsTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/HitCreationBaseTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/LongitudinalTrackHitsBaseTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/MultiValuedLongitudinalTrackHitsTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/MultiValuedTransverseTrackHitsTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/ShowerHitsBaseTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/ThreeDHitCreationAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/ThreeViewShowerHitsTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/TrackHitsBaseTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/TransverseTrackHitsBaseTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/TwoViewShowerHitsTool.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArLongitudinalTrackMatching">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArLongitudinalTrackMatching/ClearLongitudinalTracksTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArLongitudinalTrackMatching/MatchedEndPointsTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArLongitudinalTrackMatching/ThreeDLongitudinalTracksAlgorithm.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArPfoMopUp">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArPfoMopUp/ParticleRecoveryAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArPfoMopUp/SplitShowerMergingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArPfoMopUp/VertexBasedPfoMergingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArPfoMopUp/VertexBasedPfoRecoveryAlgorithm.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArShowerFragments">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArShowerFragments/ClearRemnantsTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArShowerFragments/ConnectedRemnantsTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArShowerFragments/MopUpRemnantsTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArShowerFragments/ThreeDRemnantsAlgorithm.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArShowerMatching">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArShowerMatching/ClearShowersTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArShowerMatching/ShowerTensorVisualizationTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArShowerMatching/SimpleShowersTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArShowerMatching/SplitShowersTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArShowerMatching/ThreeDShowersAlgorithm.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArThreeDBase">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArThreeDBase/ThreeDBaseAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArThreeDBase/ThreeDTracksBaseAlgorithm.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArTrackFragments">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTrackFragments/ClearTrackFragmentsTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTrackFragments/ThreeDTrackFragmentsAlgorithm.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArTransverseTrackMatching">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/ClearTracksTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/LongTracksTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/MissingTrackSegmentTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/MissingTrackTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/OvershootTracksTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/ThreeDKinkBaseTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/ThreeDTransverseTracksAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/TrackSplittingTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/TransverseTensorVisualizationTool.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/UndershootTracksTool.h"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArTwoDReco">
+      <VirtualDirectory Name="LArClusterAssociation">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/ClusterAssociationAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/ClusterExtensionAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/ClusterGrowingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/ClusterMergingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/CrossGapsAssociationAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/CrossGapsExtensionAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/LongitudinalAssociationAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/LongitudinalExtensionAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/SimpleClusterGrowingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/SimpleClusterMergingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/TransverseAssociationAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/TransverseExtensionAlgorithm.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArClusterCreation">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterCreation/ClusteringParentAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterCreation/SimpleClusterCreationAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterCreation/TrackClusterCreationAlgorithm.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArClusterMopUp">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterMopUp/BoundedClusterMergingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterMopUp/ClusterMopUpAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterMopUp/ConeBasedMergingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterMopUp/IsolatedHitMergingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterMopUp/ProximityBasedMergingAlgorithm.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArClusterSplitting">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/BranchSplittingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/ClusterSplittingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/CrossedTrackSplittingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/DeltaRaySplittingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/KinkSplittingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/LayerSplittingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/OvershootSplittingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/TrackConsolidationAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/TwoDSlidingFitConsolidationAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/TwoDSlidingFitMultiSplitAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/TwoDSlidingFitSplittingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/TwoDSlidingFitSplittingAndSplicingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/TwoDSlidingFitSplittingAndSwitchingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/VertexSplittingAlgorithm.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArCosmicRay">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArCosmicRay/CosmicRayExtensionAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArCosmicRay/CosmicRaySplittingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArCosmicRay/DeltaRayExtensionAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArCosmicRay/DeltaRayGrowingAlgorithm.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArSeedFinding">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArSeedFinding/ClusterCharacterisationAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArSeedFinding/SeedGrowingAlgorithm.h"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArSeedFinding/ShowerGrowingAlgorithm.h"/>
+      </VirtualDirectory>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/TwoDParticleCreationAlgorithm.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArUtility">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/KDTreeLinkerAlgoT.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/KDTreeLinkerToolsT.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ListChangingAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ListDeletionAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ListDissolutionAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ListMergingAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ListMovingAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ListPreparationAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/NeutrinoParentAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ListPruningAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/MopUpBaseAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ParentAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ParentBaseAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ParentSlicingBaseAlgorithm.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArVertex">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/CandidateVertexCreationAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/VertexSelectionBaseAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/EnergyKickVertexSelectionAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/HitAngleVertexSelectionAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/EnergyKickFeatureTool.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/LocalAsymmetryFeatureTool.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/GlobalAsymmetryFeatureTool.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/ShowerAsymmetryFeatureTool.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/RPhiFeatureTool.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/SvmVertexSelectionAlgorithm.h"/>
+    </VirtualDirectory>
+    <File Name="../../pandora/LArContent/larpandoracontent/LArContent.h"/>
+    <VirtualDirectory Name="LArTrackShowerId">
+      <File Name="../../LArContent/larpandoracontent/LArTrackShowerId/BranchGrowingAlgorithm.h"/>
+      <File Name="../../LArContent/larpandoracontent/LArTrackShowerId/ClusterCharacterisationAlgorithm.h"/>
+      <File Name="../../LArContent/larpandoracontent/LArTrackShowerId/PfoCharacterisationAlgorithm.h"/>
+      <File Name="../../LArContent/larpandoracontent/LArTrackShowerId/ShowerGrowingAlgorithm.h"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="src">
+    <VirtualDirectory Name="LArCheating">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingClusterCharacterisationAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingClusterCreationAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingCosmicRayIdentificationAlg.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingCosmicRayShowerMatchingAlg.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingEventSlicingTool.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingNeutrinoCreationAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingNeutrinoDaughterVerticesAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingPfoCreationAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingVertexCreationAlgorithm.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArCustomParticles">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCustomParticles/CustomParticleCreationAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCustomParticles/ShowerParticleBuildingAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCustomParticles/TrackParticleBuildingAlgorithm.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArHelpers">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArClusterHelper.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArGeometryHelper.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArMCParticleHelper.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArMonitoringHelper.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArPfoHelper.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArVertexHelper.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArPcaHelper.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArStitchingHelper.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArMonitoring">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArMonitoring/EventDisplayAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArMonitoring/EventValidationAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArMonitoring/ParticleAnalysisAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArMonitoring/ParticleMonitoringAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArMonitoring/VisualMonitoringAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArPointingClusterHelper.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArObjects">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArOverlapTensor.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArPointingCluster.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArShowerOverlapResult.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArThreeDSlidingFitResult.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArTrackOverlapResult.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArTrackPfo.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArTwoDSlidingFitResult.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArTwoDSlidingShowerFitResult.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArObjects/LArSupportVectorMachine.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArPersistency">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArPersistency/EventReadingAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArPersistency/EventWritingAlgorithm.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArPlugins">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArPlugins/LArParticleIdPlugins.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArPlugins/LArPseudoLayerPlugin.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArPlugins/LArRotationalTransformationPlugin.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArPlugins/LArTransformationPlugin.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArStitching">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArStitching/MultiPandoraApi.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArStitching/MultiPandoraApiImpl.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArStitching/StitchingAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArStitching/StitchingObjectCreationTool.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArStitching/StitchingPfoMergingTool.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArThreeDReco">
+      <VirtualDirectory Name="LArCosmicRay">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayBaseMatchingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayIdentificationAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayShowerMatchingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayTrackMatchingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayTrackRecoveryAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArCosmicRay/CosmicRayVertexBuildingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArCosmicRay/DeltaRayIdentificationAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArCosmicRay/DeltaRayMatchingAlgorithm.cc"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArEventBuilding">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArEventBuilding/BranchAssociatedPfosTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArEventBuilding/EndAssociatedPfosTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArEventBuilding/EventSlicingTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArEventBuilding/NeutrinoCreationAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArEventBuilding/NeutrinoDaughterVerticesAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArEventBuilding/NeutrinoHierarchyAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArEventBuilding/NeutrinoPropertiesAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArEventBuilding/VertexAssociatedPfosTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArEventBuilding/CheatingAssociatedPfosTool.cc"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArHitCreation">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/ClearLongitudinalTrackHitsTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/ClearTransverseTrackHitsTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/DeltaRayShowerHitsTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/HitCreationBaseTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/LongitudinalTrackHitsBaseTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/MultiValuedLongitudinalTrackHitsTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/MultiValuedTransverseTrackHitsTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/ShowerHitsBaseTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/ThreeDHitCreationAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/ThreeViewShowerHitsTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/TrackHitsBaseTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/TransverseTrackHitsBaseTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArHitCreation/TwoViewShowerHitsTool.cc"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArLongitudinalTrackMatching">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArLongitudinalTrackMatching/ClearLongitudinalTracksTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArLongitudinalTrackMatching/MatchedEndPointsTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArLongitudinalTrackMatching/ThreeDLongitudinalTracksAlgorithm.cc"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArPfoMopUp">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArPfoMopUp/ParticleRecoveryAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArPfoMopUp/SplitShowerMergingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArPfoMopUp/VertexBasedPfoMergingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArPfoMopUp/VertexBasedPfoRecoveryAlgorithm.cc"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArShowerFragments">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArShowerFragments/ClearRemnantsTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArShowerFragments/ConnectedRemnantsTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArShowerFragments/MopUpRemnantsTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArShowerFragments/ThreeDRemnantsAlgorithm.cc"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArShowerMatching">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArShowerMatching/ClearShowersTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArShowerMatching/ShowerTensorVisualizationTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArShowerMatching/SimpleShowersTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArShowerMatching/SplitShowersTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArShowerMatching/ThreeDShowersAlgorithm.cc"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArThreeDBase">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArThreeDBase/ThreeDBaseAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArThreeDBase/ThreeDTracksBaseAlgorithm.cc"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArTrackFragments">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTrackFragments/ClearTrackFragmentsTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTrackFragments/ThreeDTrackFragmentsAlgorithm.cc"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArTransverseTrackMatching">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/ClearTracksTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/LongTracksTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/MissingTrackSegmentTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/MissingTrackTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/OvershootTracksTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/ThreeDKinkBaseTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/ThreeDTransverseTracksAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/TrackSplittingTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/TransverseTensorVisualizationTool.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArThreeDReco/LArTransverseTrackMatching/UndershootTracksTool.cc"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArTwoDReco">
+      <VirtualDirectory Name="LArClusterAssociation">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/ClusterAssociationAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/ClusterExtensionAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/ClusterGrowingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/ClusterMergingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/CrossGapsAssociationAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/CrossGapsExtensionAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/LongitudinalAssociationAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/LongitudinalExtensionAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/SimpleClusterGrowingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/SimpleClusterMergingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/TransverseAssociationAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterAssociation/TransverseExtensionAlgorithm.cc"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArClusterCreation">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterCreation/ClusteringParentAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterCreation/SimpleClusterCreationAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterCreation/TrackClusterCreationAlgorithm.cc"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArClusterMopUp">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterMopUp/BoundedClusterMergingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterMopUp/ClusterMopUpAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterMopUp/ConeBasedMergingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterMopUp/IsolatedHitMergingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterMopUp/ProximityBasedMergingAlgorithm.cc"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArClusterSplitting">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/BranchSplittingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/ClusterSplittingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/CrossedTrackSplittingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/DeltaRaySplittingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/KinkSplittingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/LayerSplittingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/OvershootSplittingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/TrackConsolidationAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/TwoDSlidingFitConsolidationAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/TwoDSlidingFitMultiSplitAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/TwoDSlidingFitSplittingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/TwoDSlidingFitSplittingAndSplicingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/TwoDSlidingFitSplittingAndSwitchingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArClusterSplitting/VertexSplittingAlgorithm.cc"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArCosmicRay">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArCosmicRay/CosmicRayExtensionAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArCosmicRay/CosmicRaySplittingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArCosmicRay/DeltaRayExtensionAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArCosmicRay/DeltaRayGrowingAlgorithm.cc"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LArSeedFinding">
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArSeedFinding/ClusterCharacterisationAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArSeedFinding/SeedGrowingAlgorithm.cc"/>
+        <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/LArSeedFinding/ShowerGrowingAlgorithm.cc"/>
+      </VirtualDirectory>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArTwoDReco/TwoDParticleCreationAlgorithm.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArUtility">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/KDTreeLinkerToolsT.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ListChangingAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ListDeletionAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ListDissolutionAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ListMergingAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ListMovingAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ListPreparationAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/NeutrinoParentAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ListPruningAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/MopUpBaseAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ParentAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ParentBaseAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ParentSlicingBaseAlgorithm.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArVertex">
+      <File Name="../../LArContent/larpandoracontent/LArVertex/EnergyKickVertexSelectionAlgorithm.cc"/>
+      <File Name="../../LArContent/larpandoracontent/LArVertex/HitAngleVertexSelectionAlgorithm.cc"/>
+      <File Name="../../LArContent/larpandoracontent/LArVertex/VertexSelectionBaseAlgorithm.cc"/>
+      <File Name="../../LArContent/larpandoracontent/LArVertex/CandidateVertexCreationAlgorithm.cc"/>
+      <File Name="../../LArContent/larpandoracontent/LArVertex/EnergyKickFeatureTool.cc"/>
+      <File Name="../../LArContent/larpandoracontent/LArVertex/LocalAsymmetryFeatureTool.cc"/>
+      <File Name="../../LArContent/larpandoracontent/LArVertex/GlobalAsymmetryFeatureTool.cc"/>
+      <File Name="../../LArContent/larpandoracontent/LArVertex/ShowerAsymmetryFeatureTool.cc"/>
+      <File Name="../../LArContent/larpandoracontent/LArVertex/RPhiFeatureTool.cc"/>
+      <File Name="../../LArContent/larpandoracontent/LArVertex/SvmVertexSelectionAlgorithm.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArTrackShowerId">
+      <File Name="../../LArContent/larpandoracontent/LArTrackShowerId/BranchGrowingAlgorithm.cc"/>
+      <File Name="../../LArContent/larpandoracontent/LArTrackShowerId/ClusterCharacterisationAlgorithm.cc"/>
+      <File Name="../../LArContent/larpandoracontent/LArTrackShowerId/PfoCharacterisationAlgorithm.cc"/>
+      <File Name="../../LArContent/larpandoracontent/LArTrackShowerId/ShowerGrowingAlgorithm.cc"/>
+    </VirtualDirectory>
+    <File Name="../../pandora/LArContent/larpandoracontent/LArContent.cc"/>
+  </VirtualDirectory>
+  <Settings Type="Dynamic Library">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Debug" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild>
+        <Command Enabled="yes">cd $PANDORA_PATH/LArContent</Command>
+        <Command Enabled="yes">if [ ! -d "build" ]; then</Command>
+        <Command Enabled="yes">mkdir build</Command>
+        <Command Enabled="yes">fi</Command>
+        <Command Enabled="yes"/>
+        <Command Enabled="yes">cd build</Command>
+        <Command Enabled="yes">cmake -DCMAKE_MODULE_PATH="$PANDORA_PATH/PandoraPFA/cmakemodules;$ROOTSYS/etc/cmake" -DPANDORA_MONITORING=ON -DPandoraSDK_DIR=$PANDORA_PATH/PandoraSDK -DPandoraMonitoring_DIR=$PANDORA_PATH/PandoraMonitoring ..</Command>
+      </PreBuild>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand>make -j4 install</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$PANDORA_PATH/LArContent</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="yes" EnableCpp14="yes">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths>$PANDORA_PATH/LArContent/larpandoracontent
+$PANDORA_PATH/PandoraSDK/include
+/usera/anthony/gcc-6/include/c++/6.1.0/</SearchPaths>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="" C_Options="" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O2" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Release" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(WorkspacePath)</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
+</CodeLite_Project>

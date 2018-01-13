@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="PandoraSDK" InternalType="" Version="10.0.0">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00010001N0005Debug000000000000]]>
+    </Plugin>
+  </Plugins>
+  <Description/>
+  <Dependencies/>
+  <Settings Type="Dynamic Library">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Debug" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild>
+        <Command Enabled="yes">cd $PANDORA_PATH/PandoraSDK</Command>
+        <Command Enabled="yes">if [ ! -d "build" ]; then</Command>
+        <Command Enabled="yes">mkdir build</Command>
+        <Command Enabled="yes">fi</Command>
+        <Command Enabled="yes"/>
+        <Command Enabled="yes">cd build</Command>
+        <Command Enabled="yes">cmake -DCMAKE_MODULE_PATH=$PANDORA_PATH/PandoraPFA/cmakemodules ..</Command>
+      </PreBuild>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand>make -j4 install</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$PANDORA_PATH/PandoraSDK</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="yes" EnableCpp14="yes">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths>$PANDORA_PATH/PandoraSDK/include
+/usera/anthony/gcc-6/include/c++/6.1.0/</SearchPaths>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="" C_Options="" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O2" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Release" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(WorkspacePath)</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+  <VirtualDirectory Name="include">
+    <VirtualDirectory Name="Pandora">
+      <File Name="../../pandora/PandoraSDK/include/Pandora/Algorithm.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Pandora/AlgorithmHeaders.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Pandora/AlgorithmTool.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Pandora/ObjectFactory.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Pandora/ObjectParameters.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Pandora/Pandora.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Pandora/PandoraEnumeratedTypes.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Pandora/PandoraImpl.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Pandora/PandoraInputTypes.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Pandora/PandoraInternal.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Pandora/PandoraObjectFactories.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Pandora/PandoraSettings.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Pandora/PdgTable.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Pandora/Process.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Pandora/StatusCodes.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Pandora/ExternallyConfiguredAlgorithm.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Pandora/ObjectCreation.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Api">
+      <File Name="../../pandora/PandoraSDK/include/Api/PandoraApi.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Api/PandoraApiImpl.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Api/PandoraContentApi.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Api/PandoraContentApiImpl.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Helpers">
+      <File Name="../../pandora/PandoraSDK/include/Helpers/ClusterFitHelper.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Helpers/MCParticleHelper.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Helpers/XmlHelper.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Managers">
+      <File Name="../../pandora/PandoraSDK/include/Managers/AlgorithmManager.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Managers/AlgorithmObjectManager.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Managers/CaloHitManager.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Managers/ClusterManager.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Managers/GeometryManager.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Managers/InputObjectManager.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Managers/Manager.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Managers/MCManager.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Managers/Metadata.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Managers/ParticleFlowObjectManager.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Managers/PluginManager.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Managers/TrackManager.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Managers/VertexManager.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Objects">
+      <File Name="../../pandora/PandoraSDK/include/Objects/CaloHit.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Objects/CartesianVector.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Objects/Cluster.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Objects/DetectorGap.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Objects/Helix.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Objects/Histograms.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Objects/MCParticle.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Objects/OrderedCaloHitList.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Objects/ParticleFlowObject.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Objects/SubDetector.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Objects/Track.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Objects/TrackState.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Objects/Vertex.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Persistency">
+      <File Name="../../pandora/PandoraSDK/include/Persistency/BinaryFileReader.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Persistency/BinaryFileWriter.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Persistency/EventReadingAlgorithm.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Persistency/EventWritingAlgorithm.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Persistency/FileReader.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Persistency/FileWriter.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Persistency/PandoraIO.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Persistency/Persistency.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Persistency/XmlFileReader.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Persistency/XmlFileWriter.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Plugins">
+      <File Name="../../pandora/PandoraSDK/include/Plugins/BFieldPlugin.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Plugins/EnergyCorrectionsPlugin.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Plugins/ParticleIdPlugin.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Plugins/PseudoLayerPlugin.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Plugins/ShowerProfilePlugin.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Templates">
+      <File Name="../../pandora/PandoraSDK/include/Templates/TemplateAlgorithm.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Templates/TemplateAlgorithmTool.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Xml">
+      <File Name="../../pandora/PandoraSDK/include/Xml/tinystr.h"/>
+      <File Name="../../pandora/PandoraSDK/include/Xml/tinyxml.h"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="src">
+    <VirtualDirectory Name="Api">
+      <File Name="../../pandora/PandoraSDK/src/Api/PandoraApi.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Api/PandoraApiImpl.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Api/PandoraContentApi.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Api/PandoraContentApiImpl.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Helpers">
+      <File Name="../../pandora/PandoraSDK/src/Helpers/ClusterFitHelper.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Helpers/MCParticleHelper.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Helpers/XmlHelper.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Managers">
+      <File Name="../../pandora/PandoraSDK/src/Managers/AlgorithmManager.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Managers/AlgorithmObjectManager.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Managers/CaloHitManager.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Managers/ClusterManager.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Managers/GeometryManager.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Managers/InputObjectManager.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Managers/Manager.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Managers/MCManager.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Managers/Metadata.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Managers/ParticleFlowObjectManager.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Managers/PluginManager.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Managers/TrackManager.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Managers/VertexManager.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Objects">
+      <File Name="../../pandora/PandoraSDK/src/Objects/CaloHit.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Objects/CartesianVector.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Objects/Cluster.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Objects/DetectorGap.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Objects/Helix.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Objects/Histograms.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Objects/MCParticle.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Objects/OrderedCaloHitList.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Objects/ParticleFlowObject.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Objects/SubDetector.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Objects/Track.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Objects/TrackState.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Objects/Vertex.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Objects/SupportVectorMachine.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Pandora">
+      <File Name="../../pandora/PandoraSDK/src/Pandora/Pandora.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Pandora/PandoraImpl.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Pandora/PandoraObjectFactories.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Pandora/PandoraSettings.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Pandora/ExternallyConfiguredAlgorithm.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Pandora/ObjectCreation.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Persistency">
+      <File Name="../../pandora/PandoraSDK/src/Persistency/BinaryFileReader.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Persistency/BinaryFileWriter.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Persistency/EventReadingAlgorithm.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Persistency/EventWritingAlgorithm.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Persistency/FileReader.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Persistency/FileWriter.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Persistency/Persistency.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Persistency/XmlFileReader.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Persistency/XmlFileWriter.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Plugins">
+      <File Name="../../pandora/PandoraSDK/src/Plugins/EnergyCorrectionsPlugin.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Plugins/ParticleIdPlugin.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Templates">
+      <File Name="../../pandora/PandoraSDK/src/Templates/TemplateAlgorithm.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Templates/TemplateAlgorithmTool.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Xml">
+      <File Name="../../pandora/PandoraSDK/src/Xml/tinystr.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Xml/tinyxml.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Xml/tinyxmlerror.cc"/>
+      <File Name="../../pandora/PandoraSDK/src/Xml/tinyxmlparser.cc"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
+</CodeLite_Project>

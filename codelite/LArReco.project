@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="LArReco" InternalType="">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00010001N0005Debug000000000000]]>
+    </Plugin>
+  </Plugins>
+  <Description/>
+  <Dependencies/>
+  <Settings Type="Dynamic Library">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Debug" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild>
+        <Command Enabled="yes">cd $PANDORA_PATH/LArReco</Command>
+        <Command Enabled="yes">if [ ! -d "build" ]; then</Command>
+        <Command Enabled="yes">mkdir build</Command>
+        <Command Enabled="yes">fi</Command>
+        <Command Enabled="yes"/>
+        <Command Enabled="yes">cd build</Command>
+        <Command Enabled="yes">cmake -DCMAKE_MODULE_PATH="$PANDORA_PATH/PandoraPFA/cmakemodules;$ROOTSYS/etc/cmake" -DPANDORA_MONITORING=ON -DPandoraSDK_DIR=$PANDORA_PATH/PandoraSDK/ -DPandoraMonitoring_DIR=$PANDORA_PATH/PandoraMonitoring/ -DLArContent_DIR=$PANDORA_PATH/LArContent/ ..</Command>
+      </PreBuild>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand>make -j4 install</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$PANDORA_PATH/LArReco</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="yes" EnableCpp14="yes">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths>$PANDORA_PATH/LArReco/include
+$PANDORA_PATH/LArContent/larpandoracontent
+$PANDORA_PATH/PandoraSDK/include
+/usera/anthony/gcc-6/include/c++/6.1.0/</SearchPaths>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="" C_Options="" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O2" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Release" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(WorkspacePath)</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+  <VirtualDirectory Name="src">
+    <File Name="../../pandora/LArReco/src/DUNE4APAPseudoLayerPlugin.cxx"/>
+    <File Name="../../pandora/LArReco/src/DUNE4APATransformationPlugin.cxx"/>
+    <File Name="../../pandora/LArReco/src/DUNE35tPseudoLayerPlugin.cxx"/>
+    <File Name="../../pandora/LArReco/src/DUNE35tTransformationPlugin.cxx"/>
+    <File Name="../../pandora/LArReco/src/MicroBooNEPseudoLayerPlugin.cxx"/>
+    <File Name="../../pandora/LArReco/src/MicroBooNETransformationPlugin.cxx"/>
+    <File Name="../../pandora/LArReco/src/ProtoDUNEPseudoLayerPlugin.cxx"/>
+    <File Name="../../pandora/LArReco/src/ProtoDUNETransformationPlugin.cxx"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="include">
+    <File Name="../../pandora/LArReco/include/DUNE4APAPseudoLayerPlugin.h"/>
+    <File Name="../../pandora/LArReco/include/DUNE4APATransformationPlugin.h"/>
+    <File Name="../../pandora/LArReco/include/DUNE35tPseudoLayerPlugin.h"/>
+    <File Name="../../pandora/LArReco/include/DUNE35tTransformationPlugin.h"/>
+    <File Name="../../pandora/LArReco/include/MicroBooNEPseudoLayerPlugin.h"/>
+    <File Name="../../pandora/LArReco/include/MicroBooNETransformationPlugin.h"/>
+    <File Name="../../pandora/LArReco/include/PandoraInterface.h"/>
+    <File Name="../../pandora/LArReco/include/ProtoDUNEPseudoLayerPlugin.h"/>
+    <File Name="../../pandora/LArReco/include/ProtoDUNETransformationPlugin.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="test">
+    <File Name="../../pandora/LArReco/test/PandoraInterface.cxx"/>
+  </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
+</CodeLite_Project>

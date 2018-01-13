@@ -1,0 +1,2 @@
+#!/bin/bash
+rt $PANDORA_ROOT_RANGE \"$PANDORA_ROOT_DATA_PATH\" \"$1\" $2
