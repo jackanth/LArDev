@@ -23,6 +23,7 @@
   </VirtualDirectory>
   <VirtualDirectory Name="test">
     <File Name="../../LArPhysicsContent/test/PandoraInterface.cxx"/>
+    <File Name="../../LArPhysicsContent/test/PandoraInterface.h"/>
   </VirtualDirectory>
   <VirtualDirectory Name="src">
     <File Name="../../LArPhysicsContent/src/LArPhysicsContent.cxx"/>
