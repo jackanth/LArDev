@@ -7,6 +7,8 @@ outputFolder=$4
 eventsList=""
 counter=1
 
+source $ROOT_PATH/bin/thisroot.sh
+
 if [ "$eventsFile " == " " ]; then
     echo "Events file was empty"
     echo "Usage: pndr[-clean] [events.txt] [settings.txt] [output_dir]"
@@ -50,7 +52,7 @@ if [ "$settingsFile " == " " ]; then
 fi
     
 mkdir -p $outputFolder
-outputFolderFull=`readlink -f $outputFolder`
+outputFolderFull=`realpath $outputFolder`
 tmpSettingsFile=".settings.tmp.xml"
 sed s#OUTPUT_DIR#$outputFolderFull# $settingsFile > $tmpSettingsFile
 settingsFile=$tmpSettingsFile
