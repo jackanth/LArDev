@@ -35,6 +35,9 @@
       <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArSvmHelper.h"/>
       <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArPcaHelper.h"/>
       <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArStitchingHelper.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArFileHelper.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArFormattingHelper.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArInteractionTypeHelper.h"/>
     </VirtualDirectory>
     <VirtualDirectory Name="LArMonitoring">
       <File Name="../../pandora/LArContent/larpandoracontent/LArMonitoring/EventDisplayAlgorithm.h"/>
@@ -275,6 +278,9 @@
       <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArVertexHelper.cc"/>
       <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArPcaHelper.cc"/>
       <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArStitchingHelper.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArFileHelper.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArFormattingHelper.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArHelpers/LArInteractionTypeHelper.cc"/>
     </VirtualDirectory>
     <VirtualDirectory Name="LArMonitoring">
       <File Name="../../pandora/LArContent/larpandoracontent/LArMonitoring/EventDisplayAlgorithm.cc"/>

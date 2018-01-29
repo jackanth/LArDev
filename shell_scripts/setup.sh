@@ -2,7 +2,7 @@
 #sudo update-alternatives --set g++ /usr/bin/g++-4.9
 #sudo update-alternatives --set gcc /usr/bin/gcc-4.9
 
-if ! ps -p $SSH_AGENT_PID > /dev/null ; then
+if ! ps -p $SSH_AGENT_PID > /dev/null 2>&1 ; then
    eval "$(ssh-agent -s)"
 fi
 
