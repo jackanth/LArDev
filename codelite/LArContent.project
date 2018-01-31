@@ -18,6 +18,9 @@
       <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingNeutrinoDaughterVerticesAlgorithm.h"/>
       <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingPfoCreationAlgorithm.h"/>
       <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingVertexCreationAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingCosmicRayTaggingTool.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingNeutrinoIdTool.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingPfoCharacterisationAlgorithm.h"/>
     </VirtualDirectory>
     <VirtualDirectory Name="LArCustomParticles">
       <File Name="../../pandora/LArContent/larpandoracontent/LArCustomParticles/CustomParticleCreationAlgorithm.h"/>
@@ -251,6 +254,18 @@
       <File Name="../../LArContent/larpandoracontent/LArTrackShowerId/PfoCharacterisationAlgorithm.h"/>
       <File Name="../../LArContent/larpandoracontent/LArTrackShowerId/ShowerGrowingAlgorithm.h"/>
     </VirtualDirectory>
+    <VirtualDirectory Name="LArControlFlow">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/BeamParticleIdTool.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/CosmicRayTaggingTool.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/MasterAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/MultiPandoraApi.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/MultiPandoraApiImpl.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/NeutrinoIdTool.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/PostProcessingAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/PreProcessingAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/SlicingAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/StitchingCosmicRayMergingTool.h"/>
+    </VirtualDirectory>
   </VirtualDirectory>
   <VirtualDirectory Name="src">
     <VirtualDirectory Name="LArCheating">
@@ -263,6 +278,9 @@
       <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingNeutrinoDaughterVerticesAlgorithm.cc"/>
       <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingPfoCreationAlgorithm.cc"/>
       <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingVertexCreationAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingCosmicRayTaggingTool.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingNeutrinoIdTool.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArCheating/CheatingPfoCharacterisationAlgorithm.cc"/>
     </VirtualDirectory>
     <VirtualDirectory Name="LArCustomParticles">
       <File Name="../../pandora/LArContent/larpandoracontent/LArCustomParticles/CustomParticleCreationAlgorithm.cc"/>
@@ -490,6 +508,18 @@
       <File Name="../../LArContent/larpandoracontent/LArTrackShowerId/ShowerGrowingAlgorithm.cc"/>
     </VirtualDirectory>
     <File Name="../../pandora/LArContent/larpandoracontent/LArContent.cc"/>
+    <VirtualDirectory Name="LArControlFlow">
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/BeamParticleIdTool.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/CosmicRayTaggingTool.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/MasterAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/MultiPandoraApi.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/MultiPandoraApiImpl.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/NeutrinoIdTool.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/PostProcessingAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/PreProcessingAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/SlicingAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArControlFlow/StitchingCosmicRayMergingTool.cc"/>
+    </VirtualDirectory>
   </VirtualDirectory>
   <Settings Type="Dynamic Library">
     <GlobalSettings>
