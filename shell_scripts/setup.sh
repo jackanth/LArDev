@@ -1,12 +1,9 @@
 #!/bin/bash
-#sudo update-alternatives --set g++ /usr/bin/g++-4.9
-#sudo update-alternatives --set gcc /usr/bin/gcc-4.9
-
 if ! ps -p $SSH_AGENT_PID > /dev/null 2>&1 ; then
    eval "$(ssh-agent -s)"
 fi
 
-ssh-add ~/.ssh/id_rsa
+ssh-add ~/.ssh/id_rsa_phd
 
 # git tags.
 export PANDORA_LAR_PHYSICS_CONTENT_VERSION=master
@@ -16,8 +13,8 @@ export THESIS_VERSION=master
 export PANDORA_PFA_VERSION=master
 export PANDORA_SDK_VERSION=master
 export PANDORA_MONITORING_VERSION=master
-export PANDORA_LAR_CONTENT_VERSION=Rebased2
-export PANDORA_LAR_RECO_VERSION=master
+export PANDORA_LAR_CONTENT_VERSION=LArPhysicsContent
+export PANDORA_LAR_RECO_VERSION=LArPhysicsContent
 export PANDORA_ML_DATA_VERSION=master
 
 # Set file paths.
@@ -37,7 +34,7 @@ export PANDORA_ROOT_READ=$PANDORA_LAR_PHYSICS_CONTENT_PATH/root/ReadPandoraNtupl
 
 # Append paths and library paths.
 export PATH=$PATH:$ROOTSYS/bin:$PHD_PATH/bin:$LAR_DEV_PATH/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PANDORA_PATH/PandoraSDK/lib:$PANDORA_PATH/PandoraMonitoring/lib:$PANDORA_PATH/LArContent/lib:$PANDORA_PATH/LArReco/lib:$ROOTSYS/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PANDORA_PATH/PandoraSDK/lib:$PANDORA_PATH/PandoraMonitoring/lib:$PANDORA_PATH/LArContent/lib:$PANDORA_PATH/LArReco/lib:$PANDORA_LAR_PHYSICS_CONTENT/lib:$ROOTSYS/lib
 
 # Default Pandora options.
 export PANDORA_DEFAULT_RECO_OPTION=Full
@@ -48,7 +45,7 @@ export FW_SEARCH_PATH=$PANDORA_PATH/LArReco/settings:$PANDORA_PATH/MachineLearni
 
 # Misc.
 export PANDORA_NUM_CORES=$(getconf _NPROCESSORS_ONLN)
-export GIT_SSH_COMMAND="ssh -i ~/.ssh/id_rsa"
+export GIT_SSH_COMMAND="ssh -i ~/.ssh/id_rsa_phd"
 export PANDORA_CAV_PATH=$PHD_PATH/cav
 export PANDORA_SSHFS_USER_PATH=$PANDORA_CAV_PATH/anthony
 export PANDORA_SSHFS_USERA_PATH=$PANDORA_CAV_PATH/usera

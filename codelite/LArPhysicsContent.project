@@ -8,41 +8,23 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="include">
-    <File Name="../../LArPhysicsContent/include/LArDriftVolume.h"/>
-    <File Name="../../LArPhysicsContent/include/LArPhysicsContent.h"/>
-    <File Name="../../LArPhysicsContent/include/PandoraInterface.h"/>
-    <File Name="../../LArPhysicsContent/include/TrackHitEnergy.h"/>
-    <File Name="../../LArPhysicsContent/include/LArAnalysisParticle.h"/>
-    <File Name="../../LArPhysicsContent/include/LArAnalysisParticleHelper.h"/>
-    <File Name="../../LArPhysicsContent/include/LArTrackHitEnergy.h"/>
-    <File Name="../../LArPhysicsContent/include/AnalysisAlgorithm.h"/>
-    <File Name="../../LArPhysicsContent/include/AnalysisDataAlgorithm.h"/>
-    <File Name="../../LArPhysicsContent/include/BirksHitSelectionTool.h"/>
-    <File Name="../../LArPhysicsContent/include/WriteAnalysisParticlesAlgorithm.h"/>
-  </VirtualDirectory>
-  <VirtualDirectory Name="test">
-    <File Name="../../LArPhysicsContent/test/PandoraInterface.cxx"/>
-    <File Name="../../LArPhysicsContent/test/PandoraInterface.h"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/AnalysisAlgorithm.h"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/AnalysisDataAlgorithm.h"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/BirksHitSelectionTool.h"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysisParticle.h"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysisParticleHelper.h"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/LArPhysicsContent.h"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/LArTrackHitEnergy.h"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/WriteAnalysisParticlesAlgorithm.h"/>
   </VirtualDirectory>
   <VirtualDirectory Name="src">
-    <File Name="../../LArPhysicsContent/src/LArPhysicsContent.cxx"/>
-    <File Name="../../LArPhysicsContent/src/LArAnalysisParticleHelper.cxx"/>
-    <File Name="../../LArPhysicsContent/src/AnalysisAlgorithm.cxx"/>
-    <File Name="../../LArPhysicsContent/src/AnalysisDataAlgorithm.cxx"/>
-    <File Name="../../LArPhysicsContent/src/BirksHitSelectionTool.cxx"/>
-    <File Name="../../LArPhysicsContent/src/WriteAnalysisParticlesAlgorithm.cxx"/>
-    <File Name="../../LArPhysicsContent/src/LArAnalysisParticle.cxx"/>
-  </VirtualDirectory>
-  <VirtualDirectory Name="scripts">
-    <VirtualDirectory Name="development">
-      <File Name="../../LArPhysicsContent/scripts/development/PandoraSettings_Cheat.xml"/>
-      <File Name="../../LArPhysicsContent/scripts/development/PandoraSettings_Write.xml"/>
-    </VirtualDirectory>
-    <VirtualDirectory Name="uboone">
-      <File Name="../../LArPhysicsContent/scripts/uboone/PandoraSettings_MicroBooNE_Cosmic.xml"/>
-      <File Name="../../LArPhysicsContent/scripts/uboone/PandoraSettings_MicroBooNE_Neutrino.xml"/>
-      <File Name="../../LArPhysicsContent/scripts/uboone/PandoraSettings_MicroBooNE_Validation.xml"/>
-    </VirtualDirectory>
+    <File Name="../../LArPhysicsContent/larphysicscontent/AnalysisAlgorithm.cc"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/AnalysisDataAlgorithm.cc"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/BirksHitSelectionTool.cc"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysisParticle.cc"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysisParticleHelper.cc"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/LArPhysicsContent.cc"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/WriteAnalysisParticlesAlgorithm.cc"/>
   </VirtualDirectory>
   <VirtualDirectory Name="root">
     <File Name="../../LArPhysicsContent/root/BirksDataFit.c"/>

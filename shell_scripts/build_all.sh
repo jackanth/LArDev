@@ -66,21 +66,6 @@ make -j$PANDORA_NUM_CORES install
 
 #---------------------------------------------------------------------------------------------
 
-printf "\n\e[1mInstalling LArReco\e[0m\n"
-cd $PANDORA_PATH/LArReco
-git checkout $PANDORA_LAR_RECO_VERSION
-
-if [ $buildClean == true ]; then
-    rm -rf build
-fi
-
-mkdir -p build
-cd build
-cmake -DCMAKE_MODULE_PATH="$PANDORA_PATH/PandoraPFA/cmakemodules;$ROOTSYS/etc/cmake" -DPANDORA_MONITORING=ON -DPandoraSDK_DIR=$PANDORA_PATH/PandoraSDK/ -DPandoraMonitoring_DIR=$PANDORA_PATH/PandoraMonitoring/ -DLArContent_DIR=$PANDORA_PATH/LArContent/ ..
-make -j$PANDORA_NUM_CORES install
-
-#---------------------------------------------------------------------------------------------
-
 printf "\n\e[1mInstalling LArPhysicsContent\e[0m\n"
 cd $PANDORA_LAR_PHYSICS_CONTENT_PATH
 git checkout $PANDORA_LAR_PHYSICS_CONTENT_VERSION
@@ -99,5 +84,20 @@ make -j$PANDORA_NUM_CORES install
 printf "\n\e[1mInstalling MachineLearningData\e[0m\n"
 cd $PANDORA_PATH/MachineLearningData
 git checkout $PANDORA_ML_DATA_VERSION
+
+#---------------------------------------------------------------------------------------------
+
+printf "\n\e[1mInstalling LArReco\e[0m\n"
+cd $PANDORA_PATH/LArReco
+git checkout $PANDORA_LAR_RECO_VERSION
+
+if [ $buildClean == true ]; then
+    rm -rf build
+fi
+
+mkdir -p build
+cd build
+cmake -DCMAKE_MODULE_PATH="$PANDORA_PATH/PandoraPFA/cmakemodules;$ROOTSYS/etc/cmake" -DPANDORA_MONITORING=ON -DPHYSICS_CONTENT=ON -DLArPhysicsContent_DIR=$PANDORA_LAR_PHYSICS_CONTENT_PATH -DPandoraSDK_DIR=$PANDORA_PATH/PandoraSDK/ -DPandoraMonitoring_DIR=$PANDORA_PATH/PandoraMonitoring/ -DLArContent_DIR=$PANDORA_PATH/LArContent/ ..
+make -j$PANDORA_NUM_CORES install
 
 cd $originalDir
