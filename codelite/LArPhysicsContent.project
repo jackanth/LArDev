@@ -16,6 +16,9 @@
     <File Name="../../LArPhysicsContent/larphysicscontent/WriteAnalysisParticlesAlgorithm.h"/>
     <File Name="../../LArPhysicsContent/larphysicscontent/LArTrackHitValue.h"/>
     <File Name="../../LArPhysicsContent/larphysicscontent/HitPurityTool.h"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/TrackHitEnergyTool.h"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/LArFittedTrackInfo.h"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/McInfoTool.h"/>
   </VirtualDirectory>
   <VirtualDirectory Name="src">
     <File Name="../../LArPhysicsContent/larphysicscontent/AnalysisAlgorithm.cc"/>
@@ -25,6 +28,8 @@
     <File Name="../../LArPhysicsContent/larphysicscontent/LArPhysicsContent.cc"/>
     <File Name="../../LArPhysicsContent/larphysicscontent/WriteAnalysisParticlesAlgorithm.cc"/>
     <File Name="../../LArPhysicsContent/larphysicscontent/HitPurityTool.cc"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/TrackHitEnergyTool.cc"/>
+    <File Name="../../LArPhysicsContent/larphysicscontent/McInfoTool.cc"/>
   </VirtualDirectory>
   <VirtualDirectory Name="root">
     <File Name="../../LArPhysicsContent/root/BirksDataFit.c"/>
