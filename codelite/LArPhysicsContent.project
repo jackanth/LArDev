@@ -8,28 +8,42 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="include">
-    <File Name="../../LArPhysicsContent/larphysicscontent/AnalysisAlgorithm.h"/>
-    <File Name="../../LArPhysicsContent/larphysicscontent/AnalysisDataAlgorithm.h"/>
-    <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysisParticle.h"/>
-    <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysisParticleHelper.h"/>
+    <VirtualDirectory Name="LArAnalysis">
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysis/AnalysisAlgorithm.h"/>
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysis/AnalysisDataAlgorithm.h"/>
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysis/HitPurityTool.h"/>
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysis/McInfoTool.h"/>
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysis/TrackHitEnergyTool.h"/>
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysis/WriteAnalysisParticlesAlgorithm.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArObjects">
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArObjects/LArAnalysisParticle.h"/>
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArObjects/LArFittedTrackInfo.h"/>
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArObjects/LArTrackHitValue.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArHelpers">
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArHelpers/LArAnalysisParticleHelper.h"/>
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArHelpers/LArRootHelper.h"/>
+    </VirtualDirectory>
     <File Name="../../LArPhysicsContent/larphysicscontent/LArPhysicsContent.h"/>
-    <File Name="../../LArPhysicsContent/larphysicscontent/WriteAnalysisParticlesAlgorithm.h"/>
-    <File Name="../../LArPhysicsContent/larphysicscontent/LArTrackHitValue.h"/>
-    <File Name="../../LArPhysicsContent/larphysicscontent/HitPurityTool.h"/>
-    <File Name="../../LArPhysicsContent/larphysicscontent/TrackHitEnergyTool.h"/>
-    <File Name="../../LArPhysicsContent/larphysicscontent/LArFittedTrackInfo.h"/>
-    <File Name="../../LArPhysicsContent/larphysicscontent/McInfoTool.h"/>
   </VirtualDirectory>
   <VirtualDirectory Name="src">
-    <File Name="../../LArPhysicsContent/larphysicscontent/AnalysisAlgorithm.cc"/>
-    <File Name="../../LArPhysicsContent/larphysicscontent/AnalysisDataAlgorithm.cc"/>
-    <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysisParticle.cc"/>
-    <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysisParticleHelper.cc"/>
+    <VirtualDirectory Name="LArAnalysis">
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysis/AnalysisAlgorithm.cc"/>
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysis/AnalysisDataAlgorithm.cc"/>
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysis/HitPurityTool.cc"/>
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysis/McInfoTool.cc"/>
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysis/TrackHitEnergyTool.cc"/>
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArAnalysis/WriteAnalysisParticlesAlgorithm.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArHelpers">
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArHelpers/LArAnalysisParticleHelper.cc"/>
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArHelpers/LArRootHelper.cc"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="LArObjects">
+      <File Name="../../LArPhysicsContent/larphysicscontent/LArObjects/LArAnalysisParticle.cc"/>
+    </VirtualDirectory>
     <File Name="../../LArPhysicsContent/larphysicscontent/LArPhysicsContent.cc"/>
-    <File Name="../../LArPhysicsContent/larphysicscontent/WriteAnalysisParticlesAlgorithm.cc"/>
-    <File Name="../../LArPhysicsContent/larphysicscontent/HitPurityTool.cc"/>
-    <File Name="../../LArPhysicsContent/larphysicscontent/TrackHitEnergyTool.cc"/>
-    <File Name="../../LArPhysicsContent/larphysicscontent/McInfoTool.cc"/>
   </VirtualDirectory>
   <VirtualDirectory Name="root">
     <File Name="../../LArPhysicsContent/root/BirksDataFit.c"/>
