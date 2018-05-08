@@ -237,15 +237,15 @@
     </VirtualDirectory>
     <VirtualDirectory Name="LArVertex">
       <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/CandidateVertexCreationAlgorithm.h"/>
-      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/VertexSelectionBaseAlgorithm.h"/>
-      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/EnergyKickVertexSelectionAlgorithm.h"/>
-      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/HitAngleVertexSelectionAlgorithm.h"/>
       <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/EnergyKickFeatureTool.h"/>
-      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/LocalAsymmetryFeatureTool.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/EnergyKickVertexSelectionAlgorithm.h"/>
       <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/GlobalAsymmetryFeatureTool.h"/>
-      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/ShowerAsymmetryFeatureTool.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/HitAngleVertexSelectionAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/LocalAsymmetryFeatureTool.h"/>
       <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/RPhiFeatureTool.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/ShowerAsymmetryFeatureTool.h"/>
       <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/SvmVertexSelectionAlgorithm.h"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/VertexSelectionBaseAlgorithm.h"/>
     </VirtualDirectory>
     <File Name="../../pandora/LArContent/larpandoracontent/LArContent.h"/>
     <VirtualDirectory Name="LArTrackShowerId">
@@ -490,16 +490,16 @@
       <File Name="../../pandora/LArContent/larpandoracontent/LArUtility/ParentSlicingBaseAlgorithm.cc"/>
     </VirtualDirectory>
     <VirtualDirectory Name="LArVertex">
-      <File Name="../../LArContent/larpandoracontent/LArVertex/EnergyKickVertexSelectionAlgorithm.cc"/>
-      <File Name="../../LArContent/larpandoracontent/LArVertex/HitAngleVertexSelectionAlgorithm.cc"/>
-      <File Name="../../LArContent/larpandoracontent/LArVertex/VertexSelectionBaseAlgorithm.cc"/>
-      <File Name="../../LArContent/larpandoracontent/LArVertex/CandidateVertexCreationAlgorithm.cc"/>
-      <File Name="../../LArContent/larpandoracontent/LArVertex/EnergyKickFeatureTool.cc"/>
-      <File Name="../../LArContent/larpandoracontent/LArVertex/LocalAsymmetryFeatureTool.cc"/>
-      <File Name="../../LArContent/larpandoracontent/LArVertex/GlobalAsymmetryFeatureTool.cc"/>
-      <File Name="../../LArContent/larpandoracontent/LArVertex/ShowerAsymmetryFeatureTool.cc"/>
-      <File Name="../../LArContent/larpandoracontent/LArVertex/RPhiFeatureTool.cc"/>
-      <File Name="../../LArContent/larpandoracontent/LArVertex/SvmVertexSelectionAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/CandidateVertexCreationAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/EnergyKickFeatureTool.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/EnergyKickVertexSelectionAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/GlobalAsymmetryFeatureTool.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/HitAngleVertexSelectionAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/LocalAsymmetryFeatureTool.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/RPhiFeatureTool.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/ShowerAsymmetryFeatureTool.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/SvmVertexSelectionAlgorithm.cc"/>
+      <File Name="../../pandora/LArContent/larpandoracontent/LArVertex/VertexSelectionBaseAlgorithm.cc"/>
     </VirtualDirectory>
     <VirtualDirectory Name="LArTrackShowerId">
       <File Name="../../LArContent/larpandoracontent/LArTrackShowerId/BranchGrowingAlgorithm.cc"/>
@@ -562,12 +562,12 @@
       <CustomBuild Enabled="yes">
         <RebuildCommand/>
         <CleanCommand/>
-        <BuildCommand>make -j4 install</BuildCommand>
+        <BuildCommand>pandora-build LArContent</BuildCommand>
         <PreprocessFileCommand/>
         <SingleFileCommand/>
         <MakefileGenerationCommand/>
         <ThirdPartyToolName>None</ThirdPartyToolName>
-        <WorkingDirectory>$PANDORA_PATH/LArContent</WorkingDirectory>
+        <WorkingDirectory/>
       </CustomBuild>
       <AdditionalRules>
         <CustomPostBuild/>

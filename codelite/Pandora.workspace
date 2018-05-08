@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="Pandora" Database="" Version="10.0.0">
   <Project Name="LArReco" Path="LArReco.project" Active="No"/>
-  <Project Name="LArContent" Path="LArContent.project" Active="No"/>
+  <Project Name="LArContent" Path="LArContent.project" Active="Yes"/>
   <Project Name="PandoraMonitoring" Path="PandoraMonitoring.project" Active="No"/>
   <Project Name="PandoraSDK" Path="PandoraSDK.project" Active="No"/>
-  <Project Name="LArPhysicsContent" Path="LArPhysicsContent.project" Active="Yes"/>
+  <Project Name="LArPhysicsContent" Path="LArPhysicsContent.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
