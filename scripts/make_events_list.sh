@@ -3,5 +3,5 @@ relativePath=$1
 outputFile=$2
 
 for f in $relativePath; do
-    echo `realpath $f` >> $outputFile
+    echo `readlink -f $f` >> $outputFile
 done

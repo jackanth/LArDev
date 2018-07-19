@@ -33,7 +33,7 @@ while IFS='' read -r line || [[ -n "$line" ]]; do
     if [ $counter ==  $numEventFiles ]; then
         eventsList="$eventsList$line"
      else
-        eventsList="$eventsList$line:"
+        eventsList="$eventsList$line "
     fi
 
     counter=$((counter+1))
@@ -53,11 +53,11 @@ if [ "$settingsFile " == " " ]; then
 fi
     
 mkdir -p $outputFolder
-outputFolderFull=`realpath $outputFolder`
+outputFolderFull=`readlink -f $outputFolder`
 tmpSettingsFile=".settings.tmp.xml"
 sed s#OUTPUT_DIR#$outputFolderFull# $settingsFile > $tmpSettingsFile
 sed -i s#GEOMETRY_FILE#$PANDORA_DEFAULT_GEOMETRY_FILE# $tmpSettingsFile
-sed -i s#EVENT_FILES#$eventsList# $tmpSettingsFile
+sed -i "s#EVENT_FILES#$eventsList#" $tmpSettingsFile
 settingsFile=$tmpSettingsFile
 
 echo "Wrote to $tmpSettingsFile"
@@ -68,13 +68,9 @@ for otherSettingsFile in "$@"; do
     
     sed s#OUTPUT_DIR#$outputFolderFull# $otherSettingsFile > $tmpName
     sed -i s#GEOMETRY_FILE#$PANDORA_DEFAULT_GEOMETRY_FILE# $tmpName
-    sed -i s#EVENT_FILES#$eventsList# $tmpName
+    sed -i "s#EVENT_FILES#$eventsList#" $tmpName
 done
 
 fullCommand="$pandoraCommand -r $PANDORA_DEFAULT_RECO_OPTION -i $settingsFile $PANDORA_DEFAULT_FLAGS"
 echo -ne "Running command:\n$fullCommand\n"
 eval $fullCommand
-
-if [ "$tmpSettingsFile " != " " ]; then
-    rm $tmpSettingsFile
-fi
