@@ -19,7 +19,7 @@ else
 fi
 
 # Set file paths.
-export LAR_DIR=~/LAr
+export LAR_DIR=/usera/anthony/LAr
 export LAR_DEV_DIR=$LAR_DIR/LArDev
 export PANDORA_DIR=$LAR_DIR/pandora
 

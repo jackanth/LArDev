@@ -95,7 +95,7 @@ if [ $buildLArContent = true ]; then
 fi
 
 if [ $buildLArPhysicsContent = true ]; then
-    Build LArPhysicsContent $LAR_PHYSICS_CONTENT_DIR $buildClean "-DCMAKE_CXX_FLAGS=-std=c++14 -DCMAKE_MODULE_PATH=\"$pndrCmakeModulesDir;$rootCmakeModulesDir\" -DPANDORA_MONITORING=ON -DPandoraSDK_DIR=$PANDORA_SDK_DIR -DPandoraMonitoring_DIR=$PANDORA_MONITORING_DIR -DLArContent_DIR=$LAR_CONTENT_DIR"
+    Build LArPhysicsContent $LAR_PHYSICS_CONTENT_DIR $buildClean "-DCMAKE_CXX_FLAGS=-std=c++14 -DCMAKE_MODULE_PATH=\"$pndrCmakeModulesDir;$rootCmakeModulesDir\" -DPANDORA_MONITORING=ON -DPandoraSDK_DIR=$PANDORA_SDK_DIR -DPandoraMonitoring_DIR=$PANDORA_MONITORING_DIR -DLArContent_DIR=$LAR_CONTENT_DIR -DEigen3_DIR=$PANDORA_DIR/Eigen3/share/eigen3/cmake/"
 fi
 
 
