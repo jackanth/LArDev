@@ -8,8 +8,6 @@ shift 4
 eventsList=""
 counter=1
 
-source $ROOT_PATH/bin/thisroot.sh
-
 if [ "$eventsFile " == " " ]; then
     echo "Events file was empty"
     echo "Usage: pndr[-clean] [events.txt] [output_dir] [main settings file] [other settings files...]"

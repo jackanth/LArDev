@@ -100,7 +100,7 @@ fi
 
 
 if [ $buildLArReco = true ]; then
-    Build LArReco $LAR_RECO_DIR $buildClean "-DCMAKE_CXX_FLAGS=-std=c++14 -DCMAKE_MODULE_PATH=\"$pndrCmakeModulesDir;$rootCmakeModulesDir\" -DPANDORA_MONITORING=ON -DPHYSICS_CONTENT=ON -DLArPhysicsContent_DIR=$PHYSICS_CONTENT_DIR -DPandoraSDK_DIR=$PANDORA_SDK_DIR -DPandoraMonitoring_DIR=$PANDORA_MONITORING_DIR -DLArContent_DIR=$LAR_CONTENT_DIR"
+    Build LArReco $LAR_RECO_DIR $buildClean "-DCMAKE_CXX_FLAGS=-std=c++14 -DCMAKE_MODULE_PATH=\"$pndrCmakeModulesDir;$rootCmakeModulesDir\" -DPANDORA_MONITORING=ON -DPHYSICS_CONTENT=ON -DLArPhysicsContent_DIR=$LAR_PHYSICS_CONTENT_DIR -DPandoraSDK_DIR=$PANDORA_SDK_DIR -DPandoraMonitoring_DIR=$PANDORA_MONITORING_DIR -DLArContent_DIR=$LAR_CONTENT_DIR"
 fi
 
 #------------------------------------------------------------------------------------------------------------------------------------------

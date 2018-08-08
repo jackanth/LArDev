@@ -7,8 +7,8 @@ fi
 
 # Setup larsoft and uboonecode.
 source /cvmfs/uboone.opensciencegrid.org/products/setup_uboone.sh
-setup larsoft v06_82_00 -q e15:prof
-setup uboonecode v06_82_00 -q e15:prof
+setup larsoft v06_83_00 -q e15:prof
+setup uboonecode v06_83_00 -q e15:prof
 setup clang v5_0_1 # for clang-format
 
 # Deal with libgl.

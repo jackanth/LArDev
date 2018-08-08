@@ -1,2 +1,2 @@
 #!/bin/bash
-source $LAR_DEV_PATH/scripts/pndr_impl.sh $PHD_PATH/bin/pandora "$@"
+source $LAR_DEV_DIR/scripts/pndr_impl.sh $LAR_DIR/bin/pandora "$@"
