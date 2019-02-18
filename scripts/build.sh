@@ -83,24 +83,24 @@ pndrCmakeModulesDir="$PANDORA_PFA_DIR/cmakemodules"
 rootCmakeModulesDir="$ROOTSYS/etc/cmake"
 
 if [ $buildPandoraSDK = true ]; then
-    Build PandoraSDK $PANDORA_SDK_DIR $buildClean "-DCMAKE_CXX_FLAGS=-std=c++14 -DCMAKE_MODULE_PATH=$pndrCmakeModulesDir"
+    Build PandoraSDK $PANDORA_SDK_DIR $buildClean "-DCMAKE_CXX_FLAGS=-std=c++17 -DCMAKE_MODULE_PATH=$pndrCmakeModulesDir"
 fi
 
 if [ $buildPandoraMonitoring = true ]; then
-    Build PandoraMonitoring $PANDORA_MONITORING_DIR $buildClean "-DCMAKE_CXX_FLAGS=-std=c++14 -DCMAKE_MODULE_PATH=\"$pndrCmakeModulesDir;$rootCmakeModulesDir\" -DPandoraSDK_DIR=$PANDORA_SDK_DIR"
+    Build PandoraMonitoring $PANDORA_MONITORING_DIR $buildClean "-DCMAKE_CXX_FLAGS=-std=c++17 -DCMAKE_MODULE_PATH=\"$pndrCmakeModulesDir;$rootCmakeModulesDir\" -DPandoraSDK_DIR=$PANDORA_SDK_DIR"
 fi
 
 if [ $buildLArContent = true ]; then
-    Build LArContent $LAR_CONTENT_DIR $buildClean "-DCMAKE_CXX_FLAGS=-std=c++14 -DCMAKE_MODULE_PATH=\"$pndrCmakeModulesDir;$rootCmakeModulesDir\" -DPANDORA_MONITORING=ON -DPandoraSDK_DIR=$PANDORA_SDK_DIR -DPandoraMonitoring_DIR=$PANDORA_MONITORING_DIR -DEigen3_DIR=$PANDORA_DIR/Eigen3/share/eigen3/cmake/"
+    Build LArContent $LAR_CONTENT_DIR $buildClean "-DCMAKE_CXX_FLAGS=-std=c++17 -DCMAKE_MODULE_PATH=\"$pndrCmakeModulesDir;$rootCmakeModulesDir\" -DPANDORA_MONITORING=ON -DPandoraSDK_DIR=$PANDORA_SDK_DIR -DPandoraMonitoring_DIR=$PANDORA_MONITORING_DIR -DEigen3_DIR=$PANDORA_DIR/Eigen3/share/eigen3/cmake/"
 fi
 
 if [ $buildLArPhysicsContent = true ]; then
-    Build LArPhysicsContent $LAR_PHYSICS_CONTENT_DIR $buildClean "-DCMAKE_CXX_FLAGS=-std=c++14 -DCMAKE_MODULE_PATH=\"$pndrCmakeModulesDir;$rootCmakeModulesDir\" -DPANDORA_MONITORING=ON -DPandoraSDK_DIR=$PANDORA_SDK_DIR -DPandoraMonitoring_DIR=$PANDORA_MONITORING_DIR -DLArContent_DIR=$LAR_CONTENT_DIR -DEigen3_DIR=$PANDORA_DIR/Eigen3/share/eigen3/cmake/"
+    Build LArPhysicsContent $LAR_PHYSICS_CONTENT_DIR $buildClean "-DCMAKE_CXX_FLAGS=-std=c++17 -DCMAKE_MODULE_PATH=\"$pndrCmakeModulesDir;$rootCmakeModulesDir\" -DPANDORA_MONITORING=ON -DPandoraSDK_DIR=$PANDORA_SDK_DIR -DPandoraMonitoring_DIR=$PANDORA_MONITORING_DIR -DLArContent_DIR=$LAR_CONTENT_DIR -DEigen3_DIR=$PANDORA_DIR/Eigen3/share/eigen3/cmake/ -Dbethe-faster_DIR=$BETHE_FASTER_CMAKE_DIR"
 fi
 
 
 if [ $buildLArReco = true ]; then
-    Build LArReco $LAR_RECO_DIR $buildClean "-DCMAKE_CXX_FLAGS=-std=c++14 -DCMAKE_MODULE_PATH=\"$pndrCmakeModulesDir;$rootCmakeModulesDir\" -DPANDORA_MONITORING=ON -DPHYSICS_CONTENT=ON -DLArPhysicsContent_DIR=$LAR_PHYSICS_CONTENT_DIR -DPandoraSDK_DIR=$PANDORA_SDK_DIR -DPandoraMonitoring_DIR=$PANDORA_MONITORING_DIR -DLArContent_DIR=$LAR_CONTENT_DIR"
+    Build LArReco $LAR_RECO_DIR $buildClean "-DCMAKE_CXX_FLAGS=-std=c++17 -DCMAKE_MODULE_PATH=\"$pndrCmakeModulesDir;$rootCmakeModulesDir\" -DPANDORA_MONITORING=ON -DPHYSICS_CONTENT=ON -DLArPhysicsContent_DIR=$LAR_PHYSICS_CONTENT_DIR -DPandoraSDK_DIR=$PANDORA_SDK_DIR -DPandoraMonitoring_DIR=$PANDORA_MONITORING_DIR -DLArContent_DIR=$LAR_CONTENT_DIR"
 fi
 
 #------------------------------------------------------------------------------------------------------------------------------------------
